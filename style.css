@@ -34,8 +34,10 @@ nav a {
   position: relative;
   display: block;
   padding: 4px 0;
-  font-family: Lato, sans-serif;
-  color: #32d296;
+  /* font-family: Lato, sans-serif; */
+  font-weight: 600;
+  font-size: 18px;
+  color: #187552;
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.5s;
@@ -76,7 +78,8 @@ h1 {
   line-height: 1.1;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 800;
+  color: #187552;
 }
 .page-header {
   display: grid;
@@ -105,6 +108,7 @@ h1 {
 .page-header h2 {
   text-transform: uppercase;
   font-weight: 600;
+  color: #187552;
 }
 .page-content h2 {
   padding-bottom: 40px;
