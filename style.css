@@ -30,7 +30,7 @@ nav a {
   display: block;
   padding: 4px 0;
   font-family: Lato, sans-serif;
-  color: #444;
+  color: #32d296;
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.5s;
@@ -69,8 +69,8 @@ ul {
 h1 {
   font-size: 44px;
   line-height: 1.1;
-  letter-spacing: -1px;
-  font-style: italic;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
   font-weight: bold;
 }
 .page-header {
