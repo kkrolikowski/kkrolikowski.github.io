@@ -8,6 +8,22 @@ body {
   font-family: sans-serif;
 }
 
+/* Common styles */
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -26,13 +42,47 @@ body {
   list-style: none;
 }
 
-a:link,
-a:visited {
-  text-decoration: none;
-  color: #000;
+.section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
 }
 
-a:hover,
-a:active {
-  text-decoration: underline;
+.section-title {
+  justify-self: end;
+  grid-column: 1 / -1;
+}
+
+.section-content {
+  grid-column: 2 / -1;
+}
+
+.section-content > ul {
+  list-style: none;
+}
+.career-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.career-header-date {
+  flex: 1;
+}
+
+.career-header-company {
+  flex: 2;
+}
+
+.career-content {
+  flex: 2;
+}
+
+.career-content li {
+  margin-left: 30px;
+  list-style: outside;
 }
