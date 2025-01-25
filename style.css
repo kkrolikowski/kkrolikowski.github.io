@@ -5,13 +5,24 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #444;
 }
 
 /* Common styles */
+
+h1 {
+  font-size: 31.25px;
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
 a:link,
 a:visited {
+  font-size: 20px;
+  text-transform: uppercase;
   text-decoration: none;
   color: #000;
 }
@@ -26,7 +37,7 @@ a:active {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -50,11 +61,17 @@ a:active {
 }
 
 .section-title {
+  font-size: 48.83px;
+  letter-spacing: -0.5px;
+  line-height: 1;
+  text-transform: uppercase;
   justify-self: end;
   grid-column: 1 / -1;
 }
 
 .section-content {
+  font-size: 20px;
+  letter-spacing: 1.5;
   grid-column: 2 / -1;
 }
 
