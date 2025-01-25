@@ -11,7 +11,7 @@ body {
 }
 
 h1 {
-  font-size: 44px;
+  font-size: 30px;
   text-transform: uppercase;
   font-weight: 900;
   line-height: 1.1;
@@ -47,6 +47,7 @@ h4 {
 }
 
 .main-header-author {
+  grid-column: 1 / -1;
   margin-bottom: 40px;
 }
 
@@ -56,7 +57,7 @@ h4 {
 
 .main-header-author-image {
   grid-column: 2 / -1;
-  grid-row: 2;
+  /* grid-row: 2; */
 }
 
 .main-header-author-info {
@@ -106,7 +107,7 @@ h4 {
 
   text-transform: uppercase;
   font-style: italic;
-  font-weight: 800;
+  font-weight: 900;
   font-size: 62px;
   letter-spacing: -1px;
 }
@@ -136,7 +137,7 @@ h4 {
   grid-row: 1;
   text-transform: uppercase;
   font-style: italic;
-  font-weight: 800;
+  font-weight: 900;
   font-size: 62px;
   letter-spacing: -1px;
 }
