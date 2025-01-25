@@ -49,6 +49,9 @@ h4 {
 .main-header-author {
   grid-column: 1 / -1;
   margin-bottom: 40px;
+  background-color: #e7f5ff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.247);
+  padding: 20px;
 }
 
 .main-header-author p {
@@ -149,8 +152,8 @@ h4 {
 }
 
 footer {
-  background-color: #1c7ed6;
-  color: #f8f9fa;
+  background-color: #e7f5ff;
+  color: #343a40;
   text-align: center;
   padding: 10px;
   margin-top: 60px;
