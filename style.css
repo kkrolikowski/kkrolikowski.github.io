@@ -45,7 +45,8 @@
 .experience {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  gap: 40px;
+  row-gap: 20px;
+  column-gap: 40px;
 }
 
 .experience-career {
