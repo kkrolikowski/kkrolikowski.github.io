@@ -106,7 +106,7 @@ h4 {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   row-gap: 40px;
-  column-gap: 40px;
+  /* column-gap: 40px; */
 }
 
 .experience-icon {
@@ -133,14 +133,17 @@ h4 {
   padding: 20px;
   border-top: 1px solid #343a40;
   border-left: 1px solid #343a40;
+  border-bottom: 1px solid #343a40;
 }
 
 .experience-dates {
   grid-column: 2 / 3;
-  justify-self: center;
-  align-self: start;
-  padding: 10px;
+  justify-self: stretch;
+  align-self: stretch;
+  padding: 20px;
   border-top: 1px solid #343a40;
+  border-right: 1px solid #343a40;
+  border-bottom: 1px solid #343a40;
 }
 
 .experience-career h4 {
