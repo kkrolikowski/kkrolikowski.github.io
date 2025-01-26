@@ -3,37 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/uikit@3.20.8/dist/css/uikit.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="style.css" />
-    <title>Krzyszof Królikowski</title>
+    <title>Krzysztof Królikowski</title>
   </head>
   <body>
-    <header>
-      <h1>Krzysztof Królikowski</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#career">Career</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Hobbies</a></li>
-          <li><a href="#">Links</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div id="about" class="page-header">
-        <img class="author-image" src="me.png" width="300" />
-        <div class="header-text">
-          <h2>About me</h2>
+    <article class="container">
+      <section class="main-header">
+        <h1>Krzysztof Królikowski</h1>
+        <p>Cloud Engineer</p>
+      </section>
+      <section class="title-bar">
+        <h2>About me</h2>
+      </section>
+      <section class="about">
+        <div class="about-content">
           <p>
             My name is Krzysztof Królikowski. I'm an IT expert with long
             experience. I've started my carreer in december 2000. I was always
@@ -49,229 +32,156 @@
             current position.
           </p>
         </div>
-      </div>
-      <div class="uk-container uk-padding page-content" id="career">
-        <div class="section-header">
-          <h2>Professional Career</h2>
-          <img src="laptop.jpg" alt="Computer with code" width="10" />
+        <img
+          src="img/me.png"
+          alt="Krzysztof Królikowski headshot"
+          width="413"
+        />
+      </section>
+      <section class="info-bar">
+        <div class="location">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="contact-info-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+            />
+          </svg>
+          <p><strong>Location:</strong></p>
+          <p>Kobyłka, Mazowieckie, Poland</p>
         </div>
-        <div class="uk-timeline">
-          <div class="uk-timeline-item">
-            <div class="uk-timeline-icon">
-              <span class="uk-badge"><span uk-icon="check"></span></span>
+        <div class="website">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="contact-info-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"
+            />
+          </svg>
+          <p><strong>Website:</strong></p>
+          <p>
+            <a href="https://kkrolikowski.github.io" target="_blank"
+              >https://kkrolikowski.github.io</a
+            >
+          </p>
+        </div>
+        <div class="github">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="contact-info-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
+            />
+          </svg>
+          <p><strong>GitHub:</strong></p>
+          <p>
+            <a href="https://github.com/kkrolikowski" target="_blank"
+              >https://github.com/kkrolikowski</a
+            >
+          </p>
+        </div>
+      </section>
+      <section class="title-bar">
+        <h2>Job Experience</h2>
+        <h2>Skills</h2>
+      </section>
+      <section class="exp-skills">
+        <div class="experience">
+          <div class="experience-box">
+            <div class="experience-box-info">
+              <h3>Senior Engineer @ Cloud Governance Team</h3>
+              <h4>Ringier Axel Springer Tech</h4>
+              <p>
+                I'm working in a team that is responsible for the cloud
+                governance in the company. We are responsible for the cost
+                optimization, security and compliance in the cloud. We are also
+                responsible for the cloud architecture and the cloud strategy in
+                the company.
+              </p>
             </div>
-            <div class="uk-timeline-content">
-              <div
-                class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto"
-              >
-                <div class="uk-card-header">
-                  <div class="uk-grid-small uk-flex-middle" uk-grid>
-                    <h3 class="uk-card-title">
-                      <time>09.2023 - present</time>
-                    </h3>
-                    <span class="uk-label uk-label-success uk-margin-auto-left"
-                      >Ringier Axel Springer Tech</span
-                    >
-                    <span class="uk-label uk-label-warning uk-margin-auto-left"
-                      >Senior Engineer</span
-                    >
-                  </div>
-                </div>
-                <div class="uk-card-body">
-                  <ul>
-                    <li>Maintainig AWS EKS website hosting </li>
-                    <li>Maintaining external partners AWS accounts</li>
-                    <li>Maintaining On Premise virtualization platforms (VMware, Proxmox)</li>
-                    <li>Maintaining Media Asset Management system</li>
-                    <li>Python/Bash/NodeJS scripting</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="uk-timeline-item">
-            <div class="uk-timeline-icon">
-              <span class="uk-badge"><span uk-icon="check"></span></span>
-            </div>
-            <div class="uk-timeline-content">
-              <div
-                class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto"
-              >
-                <div class="uk-card-header">
-                  <div class="uk-grid-small uk-flex-middle" uk-grid>
-                    <h3 class="uk-card-title">
-                      <time>01.2020 - 09-2023</time>
-                    </h3>
-                    <span class="uk-label uk-label-success uk-margin-auto-left"
-                      >Ringier Axel Springer Polska</span
-                    >
-                    <span class="uk-label uk-label-warning uk-margin-auto-left"
-                      >Engineer</span
-                    >
-                  </div>
-                </div>
-                <div class="uk-card-body">
-                  <ul>
-                    <li>Design and deploy cloud infrastructure for PHP websites hosting</li>
-                    <li>Maintaining On Premise virtualization platform (VMware)</li>
-                    <li>Linux-based servers (SMB/AFP/FTP)</li>
-                    <li>Python/Bash scripting</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="uk-timeline-item">
-            <div class="uk-timeline-icon">
-              <span class="uk-badge"><span uk-icon="check"></span></span>
-            </div>
-            <div class="uk-timeline-content">
-              <div
-                class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto"
-              >
-                <div class="uk-card-header">
-                  <div class="uk-grid-small uk-flex-middle" uk-grid>
-                    <h3 class="uk-card-title">
-                      <time>03.2015 - 01.2020</time>
-                    </h3>
-                    <span class="uk-label uk-label-success uk-margin-auto-left"
-                      >DreamLab</span
-                    >
-                    <span class="uk-label uk-label-warning uk-margin-auto-left"
-                      >Engineer</span
-                    >
-                  </div>
-                </div>
-                <div class="uk-card-body">
-                  <ul>
-                    <li>Linux-based servers (SMB/AFP/FTP)</li>
-                  </ul>
-                </div>
-              </div>
+            <div class="experience-box-dates">
+              <p>07.2023 - present</p>
             </div>
           </div>
-          <div class="uk-timeline-item">
-            <div class="uk-timeline-icon">
-              <span class="uk-badge"><span uk-icon="check"></span></span>
+          <div class="experience-box">
+            <div class="experience-box-info">
+              <h3>Senior Engineer @ System Operations & Data Protection</h3>
+              <h4>Ringier Axel Springer Tech</h4>
+              <p>
+                I was working in a team that was responsible for the on-premise
+                virtualization platforms such as VMware and Proxmox. We were
+                also maintaining internal Media Asset Management System with a
+                lot of data. As a side project, I was also responsible for
+                containerized websites on AWS EKS.
+              </p>
             </div>
-            <div class="uk-timeline-content">
-              <div
-                class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto"
-              >
-                <div class="uk-card-header">
-                  <div class="uk-grid-small uk-flex-middle" uk-grid>
-                    <h3 class="uk-card-title">
-                      <time>01.2015 - 03.2015</time>
-                    </h3>
-                    <span class="uk-label uk-label-success uk-margin-auto-left"
-                      >Grupa Onet.pl</span
-                    >
-                    <span class="uk-label uk-label-warning uk-margin-auto-left"
-                      >Engineer</span
-                    >
-                  </div>
-                </div>
-                <div class="uk-card-body">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt.
-                  </p>
-                </div>
-              </div>
+            <div class="experience-box-dates">
+              <p>07.2023 - present</p>
             </div>
           </div>
-          <div class="uk-timeline-item">
-            <div class="uk-timeline-icon">
-              <span class="uk-badge"><span uk-icon="check"></span></span>
+          <div class="experience-box">
+            <div class="experience-box-info">
+              <h3>Engineer @ System Operations</h3>
+              <h4>Ringier Axel Springer Tech</h4>
+              <p>
+                I was working in a team that was responsible for the on-premise
+                infrastructure. We were responsible for the Linux servers,
+                storage and network. We were also responsible for the security
+                and compliance in the company.
+              </p>
             </div>
-            <div class="uk-timeline-content">
-              <div
-                class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto"
-              >
-                <div class="uk-card-header">
-                  <div class="uk-grid-small uk-flex-middle" uk-grid>
-                    <h3 class="uk-card-title">
-                      <time>05.2008 - 01.2015</time>
-                    </h3>
-                    <span class="uk-label uk-label-success uk-margin-auto-left"
-                      >Ringier Axel Springer Polska</span
-                    >
-                    <span class="uk-label uk-label-warning uk-margin-auto-left"
-                      >Network Administrator</span
-                    >
-                  </div>
-                </div>
-                <div class="uk-card-body">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="uk-timeline-item">
-            <div class="uk-timeline-icon">
-              <span class="uk-badge"><span uk-icon="check"></span></span>
-            </div>
-            <div class="uk-timeline-content">
-              <div
-                class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto"
-              >
-                <div class="uk-card-header">
-                  <div class="uk-grid-small uk-flex-middle" uk-grid>
-                    <h3 class="uk-card-title">
-                      <time>09.2005 - 05.2008</time>
-                    </h3>
-                    <span class="uk-label uk-label-success uk-margin-auto-left"
-                      >eo Networks</span
-                    >
-                    <span class="uk-label uk-label-warning uk-margin-auto-left"
-                      >Linux Administrator</span
-                    >
-                  </div>
-                </div>
-                <div class="uk-card-body">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="uk-timeline-item">
-            <div class="uk-timeline-icon">
-              <span class="uk-badge"><span uk-icon="check"></span></span>
-            </div>
-            <div class="uk-timeline-content">
-              <div
-                class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto"
-              >
-                <div class="uk-card-header">
-                  <div class="uk-grid-small uk-flex-middle" uk-grid>
-                    <h3 class="uk-card-title">
-                      <time>12.2000 - 09.2008</time>
-                    </h3>
-                    <span class="uk-label uk-label-success uk-margin-auto-left"
-                      >Polish Comittee of Standarization</span
-                    >
-                    <span class="uk-label uk-label-success uk-margin-auto-left"
-                      >IT helpdesk / Administrator</span
-                    >
-                  </div>
-                </div>
-                <div class="uk-card-body">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt.
-                  </p>
-                </div>
-              </div>
+            <div class="experience-box-dates">
+              <p>07.2015 - 06.2019</p>
             </div>
           </div>
         </div>
-      </div>
-    </main>
+        <div class="skills">
+          <ul>
+            <li>Linux</li>
+            <li>Ansible</li>
+            <li>Terraform</li>
+            <li>AWS</li>
+            <li>Docker</li>
+            <li>Kubernetes</li>
+            <li>Git</li>
+            <li>Python</li>
+            <li>Go</li>
+            <li>CI/CD</li>
+            <li>Monitoring</li>
+            <li>Networking</li>
+            <li>Security</li>
+          </ul>
+        </div>
+      </section>
+    </article>
+    <footer class="footer">
+      <p>Copyright &copy; 2025 Krzysztof Królikowski</p>
+    </footer>
   </body>
 </html>
