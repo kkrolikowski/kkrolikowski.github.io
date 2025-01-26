@@ -49,7 +49,7 @@ h4 {
 .main-header-author {
   grid-column: 1 / -1;
   margin-bottom: 40px;
-  background-color: #e7f5ff;
+  background-color: #f8f9fa;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.247);
   padding: 20px;
 }
@@ -96,11 +96,23 @@ h4 {
   list-style: none;
 }
 
+.contact-info-icon {
+  width: 24px;
+  height: 24px;
+  stroke: #1c7ed6;
+}
+
 .experience {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   row-gap: 40px;
   column-gap: 40px;
+}
+
+.experience-icon {
+  width: 52px;
+  height: 52px;
+  stroke: #1c7ed6;
 }
 
 .experience-title {
@@ -113,11 +125,12 @@ h4 {
   font-weight: 900;
   font-size: 62px;
   letter-spacing: -1px;
+  color: #1c7ed6;
 }
 
 .experience-career {
   grid-column: 1 / 2;
-  padding: 10px;
+  padding: 20px;
   border-top: 1px solid #343a40;
   border-left: 1px solid #343a40;
 }
@@ -135,24 +148,31 @@ h4 {
 }
 
 .skills-title {
-  justify-self: start;
+  justify-self: starcentert;
   grid-column: 3;
-  grid-row: 1;
+  grid-row: 1 / span 2;
   text-transform: uppercase;
   font-style: italic;
   font-weight: 900;
   font-size: 62px;
   letter-spacing: -1px;
+  color: #1c7ed6;
+}
+
+.skills-icon {
+  width: 62px;
+  height: 62px;
+  stroke: #1c7ed6;
 }
 
 .skills {
   justify-self: center;
   grid-column: 3;
-  grid-row: 2 / span 2;
+  grid-row: 2 / span 4;
 }
 
 footer {
-  background-color: #e7f5ff;
+  border-top: 1px solid #343a40;
   color: #343a40;
   text-align: center;
   padding: 10px;
