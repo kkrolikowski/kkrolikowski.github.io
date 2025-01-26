@@ -155,13 +155,16 @@ h2 {
   flex: 2;
 }
 
+.experience-box-info li {
+  margin-left: 20px;
+}
+
 .experience-box-info h4 {
   margin-bottom: 16px;
 }
 
 .experience-box-dates {
   flex: 1;
-  align-self: center;
 }
 
 .hobbies {
