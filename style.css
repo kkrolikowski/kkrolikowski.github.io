@@ -68,7 +68,9 @@ h2 {
 }
 
 .info-bar {
+  background-color: #f1f3f5;
   margin-bottom: 40px;
+  padding: 20px;
 }
 
 .info-item {
@@ -104,7 +106,7 @@ h2 {
   align-self: start;
   width: 413px;
   padding: 40px;
-  background-color: #3b5bdb;
+  background-color: #5c7cfa;
   color: #f1f3f5;
 }
 
