@@ -5,6 +5,9 @@
 }
 
 :root {
+  --font-color: #343a40;
+  --font-color-light: #93989e;
+  --font-color-semi-light: #6c757d;
   --primary-color: #364fc7;
   --secondary-color: #3b5bdb;
   --tertiary-color: #f0ebe3;
@@ -16,7 +19,7 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 20px;
   line-height: 1.6;
-  color: #343a40;
+  color: var(--font-color);
   border-top: 10px solid var(--primary-color);
 }
 
@@ -169,18 +172,29 @@ h2 {
 }
 
 .experience-box-info h4 {
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--font-color-semi-light);
   margin-bottom: 16px;
+}
+
+.experience-box-info h3 {
+  letter-spacing: -1px;
+  line-height: 1;
+  font-weight: 600;
 }
 
 .experience-box-dates {
   text-align: right;
-  font-size: 18px;
+  font-size: 16px;
+  color: var(--font-color-light);
   flex: 1;
 }
 
 .experience-box-dates-icon {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
 }
 
 .hobbies {
