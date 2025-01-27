@@ -4,12 +4,20 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #364fc7;
+  --secondary-color: #3b5bdb;
+  --tertiary-color: #f0ebe3;
+  --quaternary-color: #f1f3f5;
+  --quinary-color: #5c7cfa;
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-size: 20px;
   line-height: 1.6;
   color: #343a40;
-  border-top: 10px solid #364fc7;
+  border-top: 10px solid var(--primary-color);
 }
 
 h1 {
@@ -51,7 +59,7 @@ h2 {
   margin-bottom: 64px;
   padding: 20px;
 
-  background-color: #3b5bdb;
+  background-color: var(--secondary-color);
   box-shadow: 0px 10px 20px rgba(0, 16, 29, 0.761);
   color: #f1f3f5;
   border-radius: 12px;
@@ -64,7 +72,7 @@ h2 {
 .location-icon {
   width: 24px;
   height: 24px;
-  stroke: #3b5bdb;
+  stroke: var(--secondary-color);
 }
 
 .title-icons {
@@ -79,7 +87,7 @@ h2 {
   align-items: center;
   justify-items: start;
 
-  background-color: #f0ebe363;
+  background-color: var(--tertiary-color);
   width: 800px;
   /* padding: 20px; */
   border-radius: 12px;
@@ -111,7 +119,7 @@ h2 {
 }
 
 .skills-subtitle {
-  color: #3b5bdb;
+  color: var(--secondary-color);
   /* justify-self: center; */
 }
 
@@ -119,11 +127,11 @@ h2 {
   grid-row: 2 / span 4;
 }
 .exp-subtitle {
-  color: #3b5bdb;
+  color: var(--secondary-color);
 }
 
 .title-bar {
-  color: #3b5bdb;
+  color: var(--secondary-color);
 }
 
 .skills {
@@ -131,7 +139,7 @@ h2 {
   align-self: start;
   width: 413px;
   padding: 40px;
-  background-color: #5c7cfa;
+  background-color: var(--quinary-color);
   color: #f1f3f5;
   border-radius: 12px;
   margin-bottom: 80px;
@@ -157,6 +165,7 @@ h2 {
 
 .experience-box-info li {
   margin-left: 20px;
+  list-style-type: square;
 }
 
 .experience-box-info h4 {
