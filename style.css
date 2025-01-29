@@ -76,7 +76,7 @@ h2 {
 .location-icon {
   width: 24px;
   height: 24px;
-  stroke: var(--secondary-color);
+  stroke: var(--font-color);
 }
 
 .title-icons {
@@ -111,6 +111,25 @@ h2 {
   display: flex;
   gap: 10px;
   margin-bottom: 10px;
+}
+
+.info-item p {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--font-color-semi-light);
+}
+
+.info-item a:link,
+.info-item a:visited {
+  color: var(--font-color-semi-light);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.info-item a:hover {
+  color: var(--font-color);
+  text-decoration: underline;
 }
 
 .exp-skills {
