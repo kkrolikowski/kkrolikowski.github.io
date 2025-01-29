@@ -122,13 +122,12 @@ h2 {
 
 .info-item a:link,
 .info-item a:visited {
-  color: var(--font-color-semi-light);
+  color: #1971c2;
   text-decoration: none;
   cursor: pointer;
 }
 
 .info-item a:hover {
-  color: var(--font-color);
   text-decoration: underline;
 }
 
