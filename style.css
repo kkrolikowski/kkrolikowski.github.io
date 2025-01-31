@@ -57,7 +57,7 @@ h2 {
 
 .about {
   display: grid;
-  grid-template-columns: 1fr 413px;
+  grid-template-columns: 2fr 1fr;
   column-gap: 20px;
 
   margin-bottom: 64px;
