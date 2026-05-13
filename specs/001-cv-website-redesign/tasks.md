@@ -14,9 +14,9 @@ description: "Task list for CV Website Redesign implementation"
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Create project structure per implementation plan (specs/001-cv-website-redesign/plan.md)
-- [ ] T002 [P] Link UIkit 3.20.8 and Google Fonts (Inter, Poppins) in index.html
-- [ ] T003 [P] Configure global CSS reset and typography in style.css
+- [x] T001 Create project structure per implementation plan (specs/001-cv-website-redesign/plan.md)
+- [x] T002 [P] Link UIkit 3.20.8 and Google Fonts (Inter, Poppins) in index.html
+- [x] T003 [P] Configure global CSS reset and typography in style.css
 
 ---
 
@@ -26,11 +26,11 @@ description: "Task list for CV Website Redesign implementation"
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T004 Implement CSS Custom Properties for Light/Dark themes in style.css
-- [ ] T005 [P] Create theme toggle logic and persistence in script.js
-- [ ] T006 [P] Implement sticky navigation menu with theme toggle button in index.html
-- [ ] T007 [P] Enable smooth scrolling for all anchor links in style.css and script.js
-- [ ] T008 Configure native lazy loading defaults for images in index.html
+- [x] T004 Implement CSS Custom Properties for Light/Dark themes in style.css
+- [x] T005 [P] Create theme toggle logic and persistence in script.js
+- [x] T006 [P] Implement sticky navigation menu with theme toggle button in index.html
+- [x] T007 [P] Enable smooth scrolling for all anchor links in style.css and script.js
+- [x] T008 Configure native lazy loading defaults for images in index.html
 
 **Checkpoint**: Foundation ready - theme toggle and navigation are functional
 
@@ -42,10 +42,10 @@ description: "Task list for CV Website Redesign implementation"
 
 **Independent Test**: Scroll to #career section and verify vertical timeline layout with all roles from previous version
 
-- [ ] T009 [P] [US1] Define vertical timeline CSS layout and responsive breakpoints in style.css
-- [ ] T010 [US1] Extract career content from old index.html and map to new timeline structure in index.html
-- [ ] T011 [P] [US1] Implement Hero section (Bio) with me.png and high-level summary in index.html
-- [ ] T012 [US1] Style Hero section to 80vh minimum height in style.css
+- [x] T009 [P] [US1] Define vertical timeline CSS layout and responsive breakpoints in style.css
+- [x] T010 [US1] Extract career content from old index.html and map to new timeline structure in index.html
+- [x] T011 [P] [US1] Implement Hero section (Bio) with me.png and high-level summary in index.html
+- [x] T012 [US1] Style Hero section to 80vh minimum height in style.css
 
 **Checkpoint**: User Story 1 (MVP) is fully functional and testable independently
 
@@ -57,10 +57,10 @@ description: "Task list for CV Website Redesign implementation"
 
 **Independent Test**: Verify "Technical Skills" section has categorized groups (Cloud, IaC, etc.) with icons
 
-- [ ] T013 [P] [US2] Link FontAwesome CDN in index.html for technical icons
-- [ ] T014 [US2] Implement Skills section layout with category headers in index.html
-- [ ] T015 [P] [US2] Map technologies from timeline to Skill entries in index.html
-- [ ] T016 [US2] Apply styling for skill badges and category grouping in style.css
+- [x] T013 [P] [US2] Link FontAwesome CDN in index.html for technical icons
+- [x] T014 [US2] Implement Skills section layout with category headers in index.html
+- [x] T015 [P] [US2] Map technologies from timeline to Skill entries in index.html
+- [x] T016 [US2] Apply styling for skill badges and category grouping in style.css
 
 **Checkpoint**: User Story 2 is functional and integrates with the timeline data
 
@@ -72,10 +72,10 @@ description: "Task list for CV Website Redesign implementation"
 
 **Independent Test**: Verify #hobbies section exists with icons and placeholder descriptions
 
-- [ ] T017 [P] [US3] Implement Hobby section layout in index.html
-- [ ] T018 [US3] Generate placeholder content for Homelab, Smart Home, and Hiking in index.html
-- [ ] T019 [P] [US3] Add descriptive icons for each hobby category in index.html
-- [ ] T020 [US3] Finalize hobby section visual polish in style.css
+- [x] T017 [P] [US3] Implement Hobby section layout in index.html
+- [x] T018 [US3] Generate placeholder content for Homelab, Smart Home, and Hiking in index.html
+- [x] T019 [P] [US3] Add descriptive icons for each hobby category in index.html
+- [x] T020 [US3] Finalize hobby section visual polish in style.css
 
 **Checkpoint**: All user stories are independently functional and integrated
 
@@ -85,11 +85,11 @@ description: "Task list for CV Website Redesign implementation"
 
 **Purpose**: Final refinements and quality validation
 
-- [ ] T021 [P] Perform accessibility audit (WAVE/axe) and fix contrast/aria-label issues
-- [ ] T022 [P] Responsive design validation across mobile, tablet, and desktop breakpoints
-- [ ] T023 Run Google Lighthouse audit and optimize for >90 performance score
-- [ ] T024 Validate all anchor links and smooth scroll behavior
-- [ ] T025 Update quickstart.md with final implementation details
+- [x] T021 [P] Perform accessibility audit (WAVE/axe) and fix contrast/aria-label issues
+- [x] T022 [P] Responsive design validation across mobile, tablet, and desktop breakpoints
+- [x] T023 Run Google Lighthouse audit and optimize for >90 performance score
+- [x] T024 Validate all anchor links and smooth scroll behavior
+- [x] T025 Update quickstart.md with final implementation details
 
 ---
 
