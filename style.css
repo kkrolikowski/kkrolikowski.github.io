@@ -267,7 +267,7 @@ h1, h2, h3, h4, .logo {
     position: absolute;
     bottom: -20px;
     right: -10px;
-    background: rgba(22, 22, 26, 0.8);
+    background: var(--nav-bg);
     backdrop-filter: blur(10px);
     border: 1px solid var(--border);
     padding: 0.75rem 1.25rem;
@@ -280,6 +280,12 @@ h1, h2, h3, h4, .logo {
     color: var(--text-primary);
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
     z-index: 10;
+    transition: var(--transition);
+}
+
+.light-mode .tech-badge {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 .tech-badge i {
@@ -384,8 +390,25 @@ section {
 
 .company {
     color: var(--text-secondary);
-    margin-bottom: 1rem;
+    margin-bottom: 0.25rem;
     font-style: italic;
+}
+
+.team-name {
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.team-name::before {
+    content: '\f0c0';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 0.75rem;
 }
 
 .timeline-content ul {
