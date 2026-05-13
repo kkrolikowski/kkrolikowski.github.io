@@ -1,0 +1,28 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#0a0a0c"/>
+  <defs>
+    <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#grad1)"/>
+  
+  <!-- Shield Abstraction -->
+  <path d="M400 100L550 160V280C550 360 400 400 400 400C400 400 250 360 250 280V160L400 100Z" stroke="#2dd4bf" stroke-width="2" stroke-opacity="0.8"/>
+  <path d="M400 120L530 172V275C530 345 400 380 400 380C400 380 270 345 270 275V172L400 120Z" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.4" stroke-dasharray="10 5"/>
+  
+  <!-- Nodes & Connections -->
+  <circle cx="200" cy="150" r="4" fill="#2dd4bf"/>
+  <circle cx="600" cy="150" r="4" fill="#2dd4bf"/>
+  <circle cx="200" cy="350" r="4" fill="#2dd4bf"/>
+  <circle cx="600" cy="350" r="4" fill="#2dd4bf"/>
+  
+  <line x1="200" y1="150" x2="325" y2="190" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.3"/>
+  <line x1="600" y1="150" x2="475" y2="190" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.3"/>
+  <line x1="200" y1="350" x2="325" y2="310" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.3"/>
+  <line x1="600" y1="350" x2="475" y2="310" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.3"/>
+  
+  <circle cx="400" cy="250" r="40" stroke="#2dd4bf" stroke-width="2" stroke-opacity="0.6"/>
+  <path d="M380 250H420M400 230V270" stroke="#2dd4bf" stroke-width="2" stroke-opacity="0.8"/>
+</svg>

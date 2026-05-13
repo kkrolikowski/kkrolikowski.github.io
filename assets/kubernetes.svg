@@ -1,0 +1,39 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#0a0a0c"/>
+  <defs>
+    <radialGradient id="grad3" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#grad3)"/>
+  
+  <!-- Hexagonal Grid Abstraction -->
+  <g transform="translate(400, 225)">
+    <!-- Central Hex -->
+    <path d="M0 -60L52 -30V30L0 60L-52 30V-30L0 -60Z" stroke="#2dd4bf" stroke-width="2" stroke-opacity="0.9"/>
+    <!-- Surrounding Hexes -->
+    <g transform="translate(0, -70)">
+      <path d="M0 -60L52 -30V30L0 60L-52 30V-30L0 -60Z" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.4"/>
+    </g>
+    <g transform="translate(60, -35)">
+      <path d="M0 -60L52 -30V30L0 60L-52 30V-30L0 -60Z" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.4"/>
+    </g>
+    <g transform="translate(60, 35)">
+      <path d="M0 -60L52 -30V30L0 60L-52 30V-30L0 -60Z" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.4"/>
+    </g>
+    <g transform="translate(0, 70)">
+      <path d="M0 -60L52 -30V30L0 60L-52 30V-30L0 -60Z" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.4"/>
+    </g>
+    <g transform="translate(-60, 35)">
+      <path d="M0 -60L52 -30V30L0 60L-52 30V-30L0 -60Z" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.4"/>
+    </g>
+    <g transform="translate(-60, -35)">
+      <path d="M0 -60L52 -30V30L0 60L-52 30V-30L0 -60Z" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.4"/>
+    </g>
+    
+    <!-- Container Icons -->
+    <rect x="-15" y="-15" width="30" height="30" stroke="#2dd4bf" stroke-width="2" stroke-opacity="0.8"/>
+    <rect x="-10" y="-10" width="20" height="20" fill="#2dd4bf" fill-opacity="0.3"/>
+  </g>
+</svg>

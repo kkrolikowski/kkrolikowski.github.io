@@ -1,0 +1,40 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#0a0a0c"/>
+  <defs>
+    <radialGradient id="grad2" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#grad2)"/>
+  
+  <!-- Pipeline Flow -->
+  <path d="M100 225H700" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.2" stroke-dasharray="20 10"/>
+  
+  <!-- Gears -->
+  <g transform="translate(250, 225)">
+    <circle r="40" stroke="#2dd4bf" stroke-width="2" stroke-opacity="0.8"/>
+    <path d="M0 -50V-40M0 40V50M-50 0H-40M40 0H50M35 -35L42 -42M-42 42L-35 35M35 35L42 42M-42 -42L-35 -35" stroke="#2dd4bf" stroke-width="4" stroke-opacity="0.8"/>
+  </g>
+  
+  <g transform="translate(400, 225) rotate(45)">
+    <circle r="30" stroke="#2dd4bf" stroke-width="2" stroke-opacity="0.6"/>
+    <path d="M0 -40V-30M0 30V40M-40 0H-30M30 0H40M28 -28L35 -35M-35 35L-28 28M28 28L35 35M-35 -35L-28 -28" stroke="#2dd4bf" stroke-width="3" stroke-opacity="0.6"/>
+  </g>
+  
+  <g transform="translate(530, 225)">
+    <circle r="35" stroke="#2dd4bf" stroke-width="2" stroke-opacity="0.8"/>
+    <path d="M0 -45V-35M0 35V45M-45 0H-35M35 0H45M32 -32L39 -39M-39 39L-32 32M32 32L39 39M-39 -39L-32 -32" stroke="#2dd4bf" stroke-width="4" stroke-opacity="0.8"/>
+  </g>
+  
+  <!-- Moving Code Elements -->
+  <rect x="150" y="220" width="10" height="10" fill="#2dd4bf">
+    <animate attributeName="x" from="100" to="700" dur="3s" repeatCount="indefinite" />
+  </rect>
+  <rect x="300" y="220" width="10" height="10" fill="#2dd4bf" opacity="0.6">
+    <animate attributeName="x" from="100" to="700" dur="4s" repeatCount="indefinite" />
+  </rect>
+  <rect x="500" y="220" width="10" height="10" fill="#2dd4bf" opacity="0.3">
+    <animate attributeName="x" from="100" to="700" dur="2.5s" repeatCount="indefinite" />
+  </rect>
+</svg>

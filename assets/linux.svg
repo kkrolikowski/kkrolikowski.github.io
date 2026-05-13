@@ -1,0 +1,28 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#0a0a0c"/>
+  <defs>
+    <radialGradient id="grad4" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#grad4)"/>
+  
+  <!-- Terminal Abstraction -->
+  <rect x="200" y="100" width="400" height="250" rx="10" stroke="#2dd4bf" stroke-width="2" stroke-opacity="0.8"/>
+  <line x1="200" y1="130" x2="600" y2="130" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.5"/>
+  <circle cx="220" cy="115" r="4" fill="#2dd4bf" fill-opacity="0.5"/>
+  <circle cx="240" cy="115" r="4" fill="#2dd4bf" fill-opacity="0.5"/>
+  <circle cx="260" cy="115" r="4" fill="#2dd4bf" fill-opacity="0.5"/>
+  
+  <!-- Kernel/Binary Code -->
+  <text x="220" y="160" fill="#2dd4bf" fill-opacity="0.8" font-family="monospace" font-size="12">root@linux:~$ uname -a</text>
+  <text x="220" y="180" fill="#2dd4bf" fill-opacity="0.6" font-family="monospace" font-size="12">Linux 6.1.0-generic #1 SMP PREEMPT</text>
+  <text x="220" y="210" fill="#2dd4bf" fill-opacity="0.8" font-family="monospace" font-size="12">root@linux:~$ sudo systemctl status</text>
+  
+  <rect x="220" y="230" width="360" height="100" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="4 2"/>
+  
+  <!-- Binary symbols -->
+  <text x="500" y="280" fill="#2dd4bf" fill-opacity="0.2" font-family="monospace" font-size="40">0101</text>
+  <text x="500" y="320" fill="#2dd4bf" fill-opacity="0.2" font-family="monospace" font-size="40">1010</text>
+</svg>
