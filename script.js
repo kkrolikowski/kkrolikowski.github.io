@@ -75,6 +75,42 @@ document.addEventListener('DOMContentLoaded', () => {
             icon.classList.replace('fa-times', 'fa-bars');
         });
     });
+
+    // Timeline Lazy Expansion
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    const itemsToShowInitially = 2; // Hide after 2nd element
+
+    // Initially hide items beyond the limit
+    timelineItems.forEach((item, index) => {
+        if (index >= itemsToShowInitially) {
+            item.classList.add('hidden');
+        }
+    });
+
+    // Observer to trigger expansion when the 2nd item is in viewport
+    if (timelineItems.length > itemsToShowInitially) {
+        const triggerItem = timelineItems[itemsToShowInitially - 1]; // The 2nd item
+        
+        const timelineObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const hiddenItems = document.querySelectorAll('.timeline-item.hidden');
+                    
+                    hiddenItems.forEach((item, index) => {
+                        setTimeout(() => {
+                            item.classList.remove('hidden');
+                            item.classList.add('show');
+                        }, index * 200); // Back to standard 200ms stagger
+                    });
+
+                    // Stop observing once triggered
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 }); // Trigger earlier for smoother flow
+
+        timelineObserver.observe(triggerItem);
+    }
 });
 
 // Adding reveal animation styles dynamically
