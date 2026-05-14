@@ -480,24 +480,19 @@ section {
 .timeline-content li::before { content: '→'; position: absolute; left: 0; color: var(--accent); }
 
 /* Lazy Loading */
-.timeline-item.hidden, .era-header.hidden {
-    display: none;
+.reveal {
     opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-.timeline-item.show, .era-header.show {
-    display: block;
+.reveal.active {
     opacity: 1;
-    animation: fadeInUpStagger 0.6s forwards cubic-bezier(0.23, 1, 0.32, 1);
+    transform: translateY(0);
 }
 
-.era-header.show {
-    display: flex; /* Era headers use flex */
-}
-
-@keyframes fadeInUpStagger {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
+.era-header.reveal {
+    display: flex; /* Maintain flex for era headers */
 }
 
 /* Showcase */

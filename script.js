@@ -75,53 +75,17 @@ document.addEventListener('DOMContentLoaded', () => {
             icon.classList.replace('fa-times', 'fa-bars');
         });
     });
-
-    // Timeline Lazy Expansion
-    const timelineItems = document.querySelectorAll('.timeline-item, .era-header');
-    const itemsToShowInitially = 4; // Show first era and its roles
-
-    // Initially hide items beyond the limit
-    timelineItems.forEach((item, index) => {
-        if (index >= itemsToShowInitially) {
-            item.classList.add('hidden');
-        }
-    });
-
-    // Observer to trigger expansion when the 4th item is in viewport
-    if (timelineItems.length > itemsToShowInitially) {
-        const triggerItem = timelineItems[itemsToShowInitially - 1]; 
-        
-        const timelineObserver = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const hiddenItems = document.querySelectorAll('.timeline-item.hidden, .era-header.hidden');
-                    
-                    hiddenItems.forEach((item, index) => {
-                        setTimeout(() => {
-                            item.classList.remove('hidden');
-                            item.classList.add('show');
-                        }, index * 200); // Back to standard 200ms stagger
-                    });
-
-                    // Stop observing once triggered
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 }); // Trigger earlier for smoother flow
-
-        timelineObserver.observe(triggerItem);
-    }
 });
 
 // Adding reveal animation styles dynamically
 const style = document.createElement('style');
 style.textContent = `
-    .reveal, .era-header:not(.hidden) {
+    .reveal {
         opacity: 0;
         transform: translateY(30px);
         transition: opacity 0.8s ease, transform 0.8s ease;
     }
-    .reveal.active, .era-header.active:not(.hidden) {
+    .reveal.active {
         opacity: 1;
         transform: translateY(0);
     }
