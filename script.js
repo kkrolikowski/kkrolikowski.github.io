@@ -116,12 +116,12 @@ document.addEventListener('DOMContentLoaded', () => {
 // Adding reveal animation styles dynamically
 const style = document.createElement('style');
 style.textContent = `
-    .reveal {
+    .reveal, .era-header:not(.hidden) {
         opacity: 0;
         transform: translateY(30px);
         transition: opacity 0.8s ease, transform 0.8s ease;
     }
-    .reveal.active {
+    .reveal.active, .era-header.active:not(.hidden) {
         opacity: 1;
         transform: translateY(0);
     }
