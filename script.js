@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Reveal on Scroll Animation
-    const revealElements = document.querySelectorAll('.reveal');
+    const revealElements = document.querySelectorAll('.reveal, .era-header');
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -77,8 +77,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Timeline Lazy Expansion
-    const timelineItems = document.querySelectorAll('.timeline-item');
-    const itemsToShowInitially = 2; // Hide after 2nd element
+    const timelineItems = document.querySelectorAll('.timeline-item, .era-header');
+    const itemsToShowInitially = 4; // Show first era and its roles
 
     // Initially hide items beyond the limit
     timelineItems.forEach((item, index) => {
@@ -87,14 +87,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Observer to trigger expansion when the 2nd item is in viewport
+    // Observer to trigger expansion when the 4th item is in viewport
     if (timelineItems.length > itemsToShowInitially) {
-        const triggerItem = timelineItems[itemsToShowInitially - 1]; // The 2nd item
+        const triggerItem = timelineItems[itemsToShowInitially - 1]; 
         
         const timelineObserver = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    const hiddenItems = document.querySelectorAll('.timeline-item.hidden');
+                    const hiddenItems = document.querySelectorAll('.timeline-item.hidden, .era-header.hidden');
                     
                     hiddenItems.forEach((item, index) => {
                         setTimeout(() => {

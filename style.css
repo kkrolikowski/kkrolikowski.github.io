@@ -345,6 +345,70 @@ section {
     border-radius: 2px;
 }
 
+/* Technology Eras */
+.era-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 6rem 0 3rem;
+  padding: 2rem;
+  background: var(--bg-secondary);
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+}
+
+.era-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+}
+
+.era-cloud::before { background: var(--accent); box-shadow: 0 0 20px var(--accent); }
+.era-virtualization::before { background: #6366f1; box-shadow: 0 0 20px rgba(99, 102, 241, 0.5); }
+.era-linux::before { background: #f59e0b; box-shadow: 0 0 20px rgba(245, 158, 11, 0.5); }
+
+.era-icon {
+  width: 60px;
+  height: 60px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.era-virtualization .era-icon { color: #6366f1; }
+.era-linux .era-icon { color: #f59e0b; }
+
+.era-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.era-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.25rem;
+}
+
+.era-info p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
 /* Vertical Timeline (Rollback) */
 .timeline {
     position: relative;
@@ -649,5 +713,19 @@ footer {
 
     .footer-content {
         grid-template-columns: 1fr;
+    }
+
+    .era-header {
+      flex-direction: column;
+      text-align: center;
+      gap: 1.5rem;
+      padding: 2rem 1rem;
+    }
+
+    .era-header::before {
+      width: 100%;
+      height: 4px;
+      top: 0;
+      left: 0;
     }
 }
