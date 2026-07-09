@@ -57,15 +57,6 @@
 
 <br>
 
-### GitHub Stats
-
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=kkrolikowski&show_icons=true&count_private=true&title_color=2DD4BF&icon_color=2DD4BF&text_color=E4E4E7&bg_color=0A0A0C&border_color=27272A" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kkrolikowski&layout=compact&title_color=2DD4BF&icon_color=2DD4BF&text_color=E4E4E7&bg_color=0A0A0C&border_color=27272A" />
-</p>
-
-<br>
-
 ### Beyond the Console
 
 - Linux enthusiast since 1998 — lifelong passion for the open-source community
