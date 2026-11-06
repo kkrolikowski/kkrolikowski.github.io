@@ -1,0 +1,6 @@
+# Settings: https://github.com/pedrocatalao/github-cool-readme#settings
+user: kkrolikowski
+style: classic
+include:
+  private: true
+  orgs: true
